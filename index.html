@@ -64,9 +64,6 @@
        */
       function handleDomContentLoaded(event) {
 
-            
-
-
       }
 
       /**
@@ -95,13 +92,9 @@
         handleWebComponentsReady, false);
       window.addEventListener('adinitialized',
         handleAdInitialized, false);
-
-
        
     })(
-
-
-      
+  
     );
 
      // *********************************************
@@ -123,6 +116,10 @@
         }
         
     }
+    // funcio 
+    function refrescar(){
+      location.reload();
+    }
 /**
 * Función que se ejecuta una vez cargada la página
 */
@@ -131,6 +128,8 @@ onload = function () {
     rotarPubliDerecho();
 
     setInterval(rotarPubliDerecho, 9000);
+
+    setTimeout(refrescar,600000);
 }
 
       count_click = 0;
